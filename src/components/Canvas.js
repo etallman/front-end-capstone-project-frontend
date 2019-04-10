@@ -56,6 +56,9 @@ class Canvas extends Component {
       this.props.removePlant(e.target.dataset.i, e.target.dataset.j)
     }
   }
+  handlePrint = e => {
+    window.print()
+  }
 
   handleTabClicked = e => {
     this.setState({...this.state, selectedCategory: e.target.innerHTML})
@@ -198,6 +201,7 @@ class Canvas extends Component {
           handleTabClicked={this.handleTabClicked}
         />
         <div style={{ display: "flex" }}>
+         <div>
           <div style={{ display: "flex" }}>
             <div
               onDragOverCapture={this.handleDragOver}
@@ -235,7 +239,11 @@ class Canvas extends Component {
                 </div>
               </Button>
             </OverlayTrigger>
+            
           </div>
+            
+          </div>
+          
           <div style={{marginLeft:"30px",marginTop:"25px"}}>
           <SideInfo  />
           </div>
@@ -268,6 +276,13 @@ class Canvas extends Component {
             {/* <SideInfo  style={{float:"right"}}/> */}
           </Button>
         </OverlayTrigger>
+        <div>
+          <br />
+          <br />
+          <Button basic color='green' target="_blank" onClick={this.handlePrint}>
+            Click to print your awesome creation </Button> 
+        </div>
+        
        
       </div>
     );
