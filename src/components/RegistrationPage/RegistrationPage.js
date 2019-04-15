@@ -7,8 +7,6 @@ import {
     Button,
     Input
 } from "semantic-ui-react";
-import { NavBar } from '../NavBar/NavBar'
-import { PageHeader } from '../PageHeader/PageHeader'
 export class RegistrationPage extends Component {
 
     state = {
@@ -30,7 +28,7 @@ export class RegistrationPage extends Component {
     };
 
     render() {
-      const { isLoading, err } = this.props
+      const { isLoading } = this.props
 
         return (
             <React.Fragment>

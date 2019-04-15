@@ -17,7 +17,6 @@ class VeggieSearch extends Component {
     }
     
     render() {
-        const { activeIndex } = this.state;
         return (
             <React.Fragment>
                 <div className="filter-cards" >

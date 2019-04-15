@@ -20,13 +20,13 @@ export const patchLayout = (layout, id) => dispatch => {
         .then(result => {
             if(result.status === 200) dispatch(getUserLayoutData(userId))
         })
-        // .catch(err => {
-        //     console.log(err)
-        //     return Promise.reject(
-        //         dispatch({
-        //             type: PATCH_ERROR
-        //         })
-        //     );
-        // });
+        .catch(err => {
+            console.log(err)
+            return Promise.reject(
+                dispatch({
+                    type: PATCH_ERROR
+                })
+            );
+        });
 
 }

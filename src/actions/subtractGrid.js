@@ -9,7 +9,6 @@ export const subtractGrid = id => dispatch => {
   const removalAllowed = minRows || minCols
 
   if (removalAllowed) {
-      console.log(id)
     let newGrid = Array.from(store.getState().grid.grid)
     let newRow = 0
     let newCol = 0

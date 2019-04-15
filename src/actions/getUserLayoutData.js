@@ -24,14 +24,14 @@ export const getUserLayoutData = id => dispatch => {
       })
       return dispatch(preloadUserLayout(layoutById))
     })
-  // .catch(err => {
-  //     console.log(err)
-  //     return Promise.reject(
-  //         dispatch({
-  //             type: GET_USER_LAYOUT_FAILED
-  //         })
-  //     );
-  // }); 2019-04-08T19:08:58.225Z
+  .catch(err => {
+      console.log(err)
+      return Promise.reject(
+          dispatch({
+              type: GET_USER_LAYOUT_FAILED
+          })
+      )
+  })
 }
 
 function deriveInt(postgresqlDate) {
@@ -45,6 +45,5 @@ function deriveInt(postgresqlDate) {
   dateSection2.forEach((entry, index) => {
     sum = parseInt(entry, 10)/60 + sum
   })
-  console.log(dateSection1 + " " + dateSection2)
   return sum
 }

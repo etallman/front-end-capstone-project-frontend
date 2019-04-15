@@ -15,7 +15,7 @@ const styles = {
 
 export class FlowerCards extends Component {
     render() {
-        const { flowers, error } = this.props;
+        const { flowers } = this.props;
         return (
             <React.Fragment>
                 <Header color="grey" textAlign="center" style={{ fontSize: '30px' }}>Flower Search</Header>
@@ -30,7 +30,7 @@ export class FlowerCards extends Component {
                             <Card.Content centered>
                                 <h2>{flower.name}</h2>
                                 <br />
-                                <img src={flower.image} className="thumbnail" />
+                                <img src={flower.image} className="thumbnail" alt={"flower"} />
 
                                 <br />
 
@@ -54,7 +54,7 @@ export class FlowerCards extends Component {
                                             <p>Description: {flower.description}</p>
                                             <p>State(s): {flower.states}</p>
 
-                                            <a href={flower.site} target="_blank">
+                                            <a href={flower.site} target="_blank" rel="noopener noreferrer">
                                                 Research more about the {flower.name} </a>
                                             <br></br>
                                             <br></br>

@@ -1,4 +1,5 @@
 {
+  "homepage": "https://nmdanner123.gitlab.io/assessment---kwitter-frontend",
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
@@ -45,6 +46,5 @@
   "license": "ISC",
   "bugs": {
     "url": "https://gitlab.com/front-end-capstone-project/frontend/issues"
-  },
-  "homepage": "https://gitlab.com/front-end-capstone-project/frontend/Login"
+  }
 }

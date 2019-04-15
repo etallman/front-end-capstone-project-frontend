@@ -15,8 +15,7 @@ const styles = {
 
 export class VeggieCards extends Component {
   render() {
-    const { veggies, error } = this.props
-    console.log(veggies)
+    const { veggies } = this.props
     return (
       <React.Fragment>
         <div />
@@ -34,7 +33,7 @@ export class VeggieCards extends Component {
               <Card.Content centered>
                 <h2>{veggie.name}</h2>
                 <br />
-                <img src={veggie.image} className="thumbnail" />
+                <img src={veggie.image} className="thumbnail" alt={"veggie"} />
 
                 <br />
                 <Modal
@@ -57,7 +56,7 @@ export class VeggieCards extends Component {
                       <p>Sun: {veggie.sun}</p>
                       <p>Days to harvest: {veggie.days}</p>
                       <p>Description: {veggie.description}</p>
-                      <a href={veggie.site} target="_blank">
+                      <a href={veggie.site} target="_blank" rel="noopener noreferrer">
                         Click here to learn more about {veggie.name}!
                       </a>
                       <br />

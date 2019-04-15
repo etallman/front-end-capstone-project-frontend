@@ -24,6 +24,7 @@ export class Grid extends Component {
             style={{...cellStyle, borderWidth:"0px"}}
             onDragStartCapture={this.props.handleDragStart}
             onContextMenu={this.props.contextMenu}
+            alt={"p"}
           />
         :
         <div 

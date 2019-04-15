@@ -72,7 +72,6 @@ const register = registerData => dispatch => {
   })
     .then(handleJsonResponse)
     .then(result => {
-      console.log(result)
       return dispatch({
         type: REGISTER_SUCCESS,
         payload: result

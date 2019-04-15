@@ -89,7 +89,6 @@ export const user = id => dispatch => {
         return res.json();
       })
       .then(result => {
-        console.log(result)
         dispatch({
           type: UPDATE_SUCCESS,
           payload: result   //data.user.displayName

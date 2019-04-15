@@ -16,7 +16,6 @@ class ShrubSearch extends Component {
     }
 
     render() {
-        const { activeIndex } = this.state;
         return (
             <React.Fragment>
                 <div className="filter-cards" style={{ marginLeft: "150px" }}>

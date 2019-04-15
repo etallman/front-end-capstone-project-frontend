@@ -16,7 +16,7 @@ const styles = {
 
 export class ShrubCards extends Component {
     render() {
-        const { shrubs, error } = this.props;
+        const { shrubs } = this.props;
         return (
             <React.Fragment>
                 <Header as="h2" color="grey" textAlign="center" className="search">Shrub Search</Header>
@@ -31,7 +31,7 @@ export class ShrubCards extends Component {
                             <Card.Content>
                                 <h2>{shrub.name}</h2>
                                 <br />
-                                <img src={shrub.image} className="thumbnail" />
+                                <img src={shrub.image} className="thumbnail" alt={"shrub"}/>
 
                                 <br />
                                 <Modal
@@ -48,7 +48,7 @@ export class ShrubCards extends Component {
                                             <p>Size: {shrub.height}</p>
                                             <p>Description: {shrub.description}</p>
                                             <p>State(s): {shrub.states}</p>
-                                            <a href={shrub.site} target="_blank">
+                                            <a href={shrub.site} target="_blank" rel="noopener noreferrer">
                                                 Research more about the {shrub.name} </a>
                                             <br></br>
                                             <br></br>

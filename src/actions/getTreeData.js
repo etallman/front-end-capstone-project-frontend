@@ -27,7 +27,6 @@ export const getTreeData = () => dispatch => {
   const onLoad = (data, error) => {
     if (data) {
       const trees = data.tree
-      console.log(trees)
 
       dispatch({ type: GET_TREE_DATA_SUCCESS, trees })
     } else {

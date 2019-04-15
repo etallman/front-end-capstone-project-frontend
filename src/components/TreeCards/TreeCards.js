@@ -15,8 +15,7 @@ const styles = {
 
 export class TreeCards extends Component {
     render() {
-        const { trees, error } = this.props;
-        console.log(trees)
+        const { trees } = this.props;
         return (
             <React.Fragment>
                 <Header as="h2" color="grey" textAlign="center" className="search">Tree Search</Header>
@@ -31,7 +30,7 @@ export class TreeCards extends Component {
                             <Card.Content centered>
                                 <h2>{tree.name}</h2>
                                 <br />
-                                <img src={tree.image} className="thumbnail" />
+                                <img src={tree.image} className="thumbnail" alt={"tree"}/>
 
                                 <br />
                                 <Modal
@@ -48,7 +47,7 @@ export class TreeCards extends Component {
                                             <p>Size: {tree.height}</p>
                                             <p>Description: {tree.description}</p>
                                             <p>State(s): {tree.states}</p>
-                                            <a href={tree.site} target="_blank">
+                                            <a href={tree.site} target="_blank" rel="noopener noreferrer">
                                                 Research more about the {tree.name} </a>
                                             <br></br>
                                             <br></br>

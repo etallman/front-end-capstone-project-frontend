@@ -27,7 +27,6 @@ export const getShrubData = () => dispatch => {
   const onLoad = (data, error) => {
     if (data) {
       const shrubs = data.shrub
-      console.log(shrubs)
 
       dispatch({ type: GET_SHRUB_DATA_SUCCESS, shrubs })
     } else {

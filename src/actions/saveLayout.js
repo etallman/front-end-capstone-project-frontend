@@ -33,14 +33,3 @@ export const saveLayout = (name, layout) => dispatch => {
         });
 
 }
-
-// {layout: {…}}
-// layout:
-// createdAt: "2019-04-05T17:52:01.348Z"
-// id: 18
-// layout: (10) [Array(10), Array(10), Array(10), Array(10), Array(10), Array(10), Array(10), Array(10), Array(10), Array(10)]
-// name: "reser"
-// updatedAt: "2019-04-05T17:52:01.348Z"
-// userId: 2
-// __proto__: Object
-// __proto__: Object

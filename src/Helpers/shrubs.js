@@ -10,7 +10,6 @@ export default function load(callback) {
         .then(
           response => {
             const data = response.result.values
-            console.log(data)
             const shrub =
               data.map(shrubs => ({
                 name: shrubs[0],
