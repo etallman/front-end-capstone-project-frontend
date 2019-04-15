@@ -36,7 +36,7 @@ export class FlowerCards extends Component {
 
                                 <Modal
                                 className = "modalStyle"
-                                    size={"medium"}
+                                    size={"small"}
                                     trigger={<Button style={styles.cardButtons} >Read More</Button>}
                                     closeIcon
                                     style={{ height: 'initial', top: "initial", left: 'initial' }}

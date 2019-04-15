@@ -39,7 +39,7 @@ export class NavBar extends Component {
           <Menu.Item style={{ color: "gray" }}>
             Plants
             <Dropdown>
-              <Dropdown.Menu item name="Plants">
+              <Dropdown.Menu name="Plants">
                 <Dropdown.Item
                   name="flowers"
                   style={{ color: "gray" }}

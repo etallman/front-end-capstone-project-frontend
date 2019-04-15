@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import { Tab, Select } from "semantic-ui-react"
+import { Tab } from "semantic-ui-react"
 import { connect } from "react-redux"
 import { Input, Button, Dropdown, Form, Message } from "semantic-ui-react"
 import { generalStyling, buttonStyling, tabStyling } from "./styles"
@@ -165,7 +165,7 @@ class MainMenu extends Component {
               <Tab.Pane style={tabStyling}>
                 <Dropdown
                   onChange={this.props.chooseState}
-                  control={Select}
+                  selection
                   placeholder="All States"
                   options={stateOptions}
                   disabled={this.props.selectedCategory!== "Flowers" ? true:false}
