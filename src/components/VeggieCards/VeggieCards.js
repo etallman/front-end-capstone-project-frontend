@@ -23,7 +23,7 @@ export class VeggieCards extends Component {
           Veggie Search
         </Header>
         <Image src={picture} size="large" centered />
-        <Card.Group centered>
+        <Card.Group centered={true}>
           {veggies.map((veggie, i) => (
             <Card
               style={styles.cardPosition}

@@ -64,7 +64,6 @@ class Canvas extends Component {
   handleTabClicked = e => {
     
     if(e.target.innerHTML !== "") {
-      console.log(e.target.innerHTML)
       this.setState({ ...this.state, selectedCategory: e.target.innerHTML })
     }
   }

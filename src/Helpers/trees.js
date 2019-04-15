@@ -10,7 +10,6 @@ export default function load(callback) {
         .then(
           response => {
             const data = response.result.values
-            console.log(data)
             const tree =
               data.map(trees => ({
                 name: trees[0],
