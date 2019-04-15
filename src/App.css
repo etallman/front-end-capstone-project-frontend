@@ -1,33 +1,109 @@
+body {
+  /* max-width: 1080px; */
+  max-width: 100%;
+  box-sizing: border-box;
+  font-family: 'Raleway';
+  padding: 2%;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+/* .pageHeader {
+  background-color: white;
+ display: flex; 
+ flex-direction: row;
+ min-height: 100vh;
+  flex-direction: column; 
+  justify-content: left;
+  align-items: center; 
   font-size: calc(10px + 2vmin);
+  width: 70%;
   color: white;
-}
-
+}  
+*/
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.formDiv {
+  width: 40%; 
+  border:  9px solid rgb(131, 137, 114);
+  border-radius: 20px;
+  padding: 1%; 
+  /* background-color: #ACC9AC; */
+}
+
+.userImage {
+  margin: auto;
+  object-fit: contain;
+  border: 1px solid;
+}
+
+.pageDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 2%;
+  color: gray;
+}
+
+.userCard {
+  margin-left: -25%;
+  margin-right: 5%;
+  width: 30%;
+  height: 10%;
+  /* background-color: #ACC9AC; */
+  border:  9px solid rgb(131, 137, 114);
+  border-radius: 20px;
+  padding: 1%;
+} 
+
+.formDiv {
+  display: flex;
+  flex-direction: column;
+  width: 30%; 
+  border:  9px solid rgb(131, 137, 114);
+  border-radius: 20px;
+  padding: 1%; 
+  /* background-color: #ACC9AC; */
+} 
+
+.thumbnail {
+  width: 220px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.deleteAccountDiv {
+display: flex;
+align-self: center;
+align-items: center;
+padding: 20px;
+width: 20%;
+}
+
+.ui.modal>.content {
+    display: block;
+    width: 100%;
+    font-size: 1em;
+    line-height: 1.4;
+    padding: 1.5rem;
+    padding-top: 1.5rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    background: #fff;
+}
+
+.fonts {
+  color: gray;
+  text-align: center;
+
+}
+
+.flower-card {
+  color: gray;
+  text-align: center;
 }
