@@ -12,4 +12,4 @@ pages:
   only:
   - master
   variables:
-    PUBLIC_URL: "/assessment---kwitter-frontend"
+    PUBLIC_URL: "/frontend"
