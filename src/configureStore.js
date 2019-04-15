@@ -1,11 +1,13 @@
-import { createBrowserHistory } from "history";
-import { applyMiddleware, createStore } from "redux";
-import { routerMiddleware } from "connected-react-router";
-import createRootReducer from "./reducers";
-import thunk from "redux-thunk";
-import { composeWithDevTools } from "redux-devtools-extension";
+import { createBrowserHistory } from "history"
+import { applyMiddleware, createStore } from "redux"
+import { routerMiddleware } from "connected-react-router"
+import createRootReducer from "./reducers"
+import thunk from "redux-thunk"
+import { composeWithDevTools } from "redux-devtools-extension"
 
-export const history = createBrowserHistory();
+export const history = createBrowserHistory({
+  basename: process.env.PUBLIC_URL
+})
 
 export default function configureStore(preloadedState) {
   const store = createStore(
@@ -18,7 +20,7 @@ export default function configureStore(preloadedState) {
         // ... other middlewares ...
       )
     )
-  );
+  )
 
-  return store;
+  return store
 }
