@@ -34,7 +34,7 @@ This project can be deployed live using the following link: https://front-end-ca
   <li>React Drag-n-Drop</li>
   <li>Redux</li>
   <li>Bootstrap</li>
-  <li>SemanticUI<li>
+  <li>SemanticUI</li>
   <li>Node/Express</li>--backend layouts, login, and register
   <li>Google Sheets w/ Google Sheets API</li>--stored plant and flower databases.
 
