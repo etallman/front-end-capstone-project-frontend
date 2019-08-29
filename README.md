@@ -37,7 +37,7 @@ This project can be deployed live using the following link: https://front-end-ca
   <li>SemanticUI</li>
   <li>Node/Express</li>--backend layouts, login, and register
   <li>Google Sheets w/ Google Sheets API</li>--stored plant and flower databases.
-
+</ul>
 
 ## Authors
 <ul>
@@ -46,4 +46,4 @@ This project can be deployed live using the following link: https://front-end-ca
   <li>Suravita Roy</li>
   <li>Eileen Tallman</li>
   <li>Taylor Hurt</li>--instructor at Kenzie Academy, laid groundwork for API.
- </ul>
+</ul>
